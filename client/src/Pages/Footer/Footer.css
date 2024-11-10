@@ -1,0 +1,60 @@
+.footer {
+    background-color: #343a40; /* Dark background */
+    color: white; /* White text */
+    padding: 20px 15px; /* Adjusted padding */
+    box-sizing: border-box;
+    margin-left: 0; /* Reset margin by default */
+}
+
+.footer h5 {
+    color: #f8f9fa; /* Light color for headings */
+    font-weight: bold; /* Bold headings */
+}
+
+.footer p, .footer ul {
+    color: #d1d1d1; /* Light gray for text */
+}
+
+.social-link {
+    color: #f8f9fa; /* Light color for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+    font-size: 24px; /* Adjust size of icons */
+    margin: 0 10px; /* Spacing between icons */
+}
+
+.social-link:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center; /* Center text on mobile */
+    }
+
+    .footer .row {
+        flex-direction: column; /* Stack columns */
+        align-items: center; /* Center align items */
+    }
+
+    .footer h5 {
+        font-size: 1.2rem; /* Adjust heading size on small screens */
+    }
+
+    .footer p, .footer ul {
+        font-size: 0.9rem; /* Slightly smaller text */
+    }
+
+    .social-link {
+        font-size: 20px; /* Slightly smaller icons on mobile */
+        margin: 0 8px; /* Adjust spacing on mobile */
+    }
+}
+
+/* Large screen adjustments */
+@media (min-width: 1200px) {
+    .footer {
+        margin-left: 190px; /* Shift footer 70px to the right */
+        max-width: calc(100% - 190px); /* Adjust width to prevent overflow */
+    }
+}

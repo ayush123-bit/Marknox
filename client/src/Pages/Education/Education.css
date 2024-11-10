@@ -1,0 +1,78 @@
+.education {
+    padding-left: 150px;  
+}
+
+.education hr {
+    color: #138781; /* Greenish color for the horizontal line */
+    width: 400px; 
+    margin: 10px auto; 
+}
+
+.education h1 {
+    font-weight: bold;
+    color: #138781; /* Greenish color for the heading */
+}
+
+.education {
+    background-color: #f8f9fa; /* Light background for contrast */
+    padding: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Set a max width for the education section */
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 20px; /* Add some top margin for spacing */
+}
+
+.education-card {
+    width: 80%;
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    transition: transform 0.2s; /* Smooth hover effect */
+    margin-left: 200px; 
+    padding: 15px; /* Padding inside the card */
+    color: white; /* Default text color */
+}
+
+/* Different colors for each card */
+.education-card:nth-child(1) {
+    background-color: #007bff; /* Blue color */
+}
+
+.education-card:nth-child(2) {
+    background-color: #28a745; /* Green color */
+}
+
+.education-card:nth-child(3) {
+    background-color: #17a2b8; /* Teal color */
+}
+
+.education-card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    opacity: 0.9; /* Slightly reduce opacity on hover */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Slightly larger title */
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1rem; /* Subtitle size */
+    margin-bottom: 0.5rem; /* Spacing below subtitle */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Text size */
+}
+
+@media (max-width: 576px) {
+    .education {
+        padding: 15px; /* Smaller padding on mobile */
+    }
+    
+    .education-card {
+        width: 100%; /* Full width on mobile */
+        margin-left: 0; /* Reset margin for mobile */
+    }
+}

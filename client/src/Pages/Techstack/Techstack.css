@@ -1,0 +1,56 @@
+.techstack {
+    padding-left: 110px;
+}
+
+.techstack hr {
+    color: #138781;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.techstack h1 {
+    font-weight: bold;
+    color: #138781;
+}
+
+/* Tech icon styles */
+.tech-icon {
+    color: #007bff; /* Customize color */
+}
+
+/* Card styles */
+.card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow to the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Card hover effects */
+.card:hover {
+    transform: scale(1.05); /* Slightly increase size on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .techstack {
+        padding-left: 0; /* Remove left padding for smaller screens */
+        padding-right: 0; /* Remove right padding for smaller screens */
+    }
+
+    .row {
+        display: flex; /* Ensure flex display for rows */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        justify-content: center; /* Center items in the row */
+    }
+
+    .col-md-3 {
+        flex: 0 0 45%; /* Two cards per row on mobile */
+        max-width: 45%; /* Limit width for two cards per row */
+        margin-bottom: 20px; /* Space between rows */
+    }
+}

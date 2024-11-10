@@ -1,0 +1,90 @@
+/* Base styles */
+.about {
+    margin: 0 auto; /* Center the section */
+    max-width: 90vw; /* Use most of the screen width */
+    padding: 20px; /* Base padding */
+    box-sizing: border-box; /* Prevent padding from affecting width */
+}
+
+.about-img img {
+    border-radius: 10px;
+    width: 100%; /* Full width within container */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 20px 0; /* Center image vertically */
+}
+
+.about-content {
+    padding: 15px;
+}
+
+.about-content p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: justify;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.about-content h1 {
+    color: #138781;
+    font-family: cursive;
+    border-bottom: 2px solid gray;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+    .about {
+        padding: 10px;
+    }
+
+    .about-img img {
+        width: 100%;
+        margin-left: 0; /* Reset margin for smaller screens */
+    }
+
+    .about-content {
+        padding: 10px;
+    }
+
+    .about-content h1 {
+        font-size: 24px;
+    }
+
+    .about-content p {
+        font-size: 16px;
+    }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 576px) {
+    .about-content h1 {
+        font-size: 22px;
+    }
+
+    .about-content p {
+        font-size: 14px;
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 1200px) {
+    .about {
+        max-width: 80vw; /* Reduce extra space on the sides */
+        padding: 10px;
+    }
+
+    .about-img img {
+        width: 70%; /* Slightly reduce image size */
+        margin-left: 90px; /* Offset image to the right */
+    }
+
+    .about-content h1 {
+        font-size: 26px;
+    }
+
+    .about-content p {
+        font-size: 17px;
+    }
+}

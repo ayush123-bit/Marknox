@@ -1,0 +1,58 @@
+.contact{
+    padding-left: 110px;
+   
+}
+.contact hr{
+    color: #138781;
+    width: 400px;
+    margin: 10px auto;
+}
+.contact h1{
+    font-weight: bold;
+    color: #138781;
+}
+.contact {
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    max-width: 600px; /* Max width for the form */
+    margin: 0 auto; /* Center the form */
+}
+
+.contact h1 {
+    color: #138781; /* Headline color */
+}
+
+.contact p {
+    color: #555; /* Subtitle color */
+}
+
+.contact-form {
+    margin-top: 20px; /* Space above the form */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form fields */
+}
+
+.form-control {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    border: 1px solid #ccc; /* Border color */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.btn-primary {
+    background-color: #138781; /* Primary button color */
+    border: none; /* No border for button */
+    padding: 10px 15px; /* Padding inside button */
+    border-radius: 4px; /* Rounded corners */
+    color: white; /* Text color for button */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.btn-primary:hover {
+    background-color: #117a6b; /* Darker color on hover */
+}

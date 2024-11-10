@@ -1,0 +1,127 @@
+/* Base styles for larger screens */
+.home-container {
+    height: 300px;
+    color: white;
+    text-align: left !important;
+    padding: 0 15px;
+}
+
+.home-content h2 {
+    padding: 5px;
+    padding-top: 80px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.home-content h1 {
+    color: #e0b50f;
+    padding: 5px;
+    margin-left: 100px;
+    text-align: left;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 20px;
+    margin-left: 140px;
+}
+
+.home-buttons .btn-hire,
+.home-buttons .btn-cv {
+    width: auto;
+    max-width: 160px;
+    margin: 0 10px 0 0;
+}
+
+.home-buttons .btn-hire {
+    background-color: #3b8ff3;
+    color: white;
+}
+
+.home-buttons .btn-hire:hover {
+    color: #3b8ff3;
+    background-color: white;
+    transition: 1s;
+}
+
+.home-buttons .btn-cv {
+    background-color: #f29f67;
+    color: white;
+}
+
+.home-buttons .btn-cv:hover {
+    opacity: 80%;
+    transition: 1s;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 600px) {
+    .home-container {
+        height: auto;
+        padding: 20px;
+        margin-top: 50px;
+        text-align: center; /* Center content on mobile */
+    }
+
+    .home-content h2 {
+        padding-top: 40px;
+        font-size: 24px;
+        text-align: center; /* Center align on mobile */
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+
+    .home-content h1 {
+        font-size: 28px;
+        text-align: center; /* Center align on mobile */
+        margin-left: 0; /* Remove left margin on mobile */
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0; /* Center buttons on mobile */
+    }
+
+    .home-buttons .btn-hire,
+    .home-buttons .btn-cv {
+        width: 90%; /* Make buttons full width */
+        max-width: none; /* Remove max width */
+        margin: 5px 0; /* Add margin for spacing */
+    }
+}
+
+/* Large screen styles */
+@media (min-width: 1200px) {
+    .home-container {
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .home-content h2 {
+        padding-top: 80px;
+        font-size: 32px;
+        text-align: left;
+        margin-left: 100px; /* Restore left margin */
+    }
+
+    .home-content h1 {
+        font-size: 36px;
+        text-align: left;
+        margin-left: 100px; /* Restore left margin */
+    }
+
+    .home-buttons {
+        flex-direction: row;
+        align-items: flex-start;
+        margin-left: 140px; /* Restore left margin */
+    }
+
+    .home-buttons .btn-hire,
+    .home-buttons .btn-cv {
+        width: auto;
+        max-width: 160px;
+        margin: 0 10px 0 0;
+    }
+}

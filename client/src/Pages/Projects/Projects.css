@@ -1,0 +1,92 @@
+.projects {
+    padding-left: 170px;
+     /* Added right padding for balance */
+}
+
+.projects hr {
+    color: #138781;
+    width: 400px;
+    margin: 10px auto;
+}
+
+.projects h1 {
+    font-weight: bold;
+    color: #138781;
+}
+
+/* Card styles */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Ensure equal height for cards */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Base card styles */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    height: 100%; /* Ensure equal height for cards */
+    border-radius: 8px; /* Optional: smoothen the edges */
+    overflow: hidden; /* Ensure content stays within card boundaries */
+    background-color: #fff; /* Background color for better contrast */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+.spinner {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: #3498db;
+    animation: spin 1s ease-in-out infinite;
+    margin: 20px auto;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .projects {
+        padding-left: 0; /* Remove left padding on mobile */
+        padding-right: 0; /* Remove right padding on mobile */
+    }
+
+    .row {
+        display: flex; /* Ensure flex display for rows */
+        flex-wrap: wrap; /* Allow wrapping of items */
+        justify-content: center; /* Center items in the row */
+    }
+
+    .col-12, .col-md-6, .col-lg-4 {
+        flex: 0 0 100%; /* Full width on mobile */
+        max-width: 100%; /* Ensure full width on mobile */
+        margin-bottom: 20px; /* Space between rows */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .col-md-6, .col-lg-4 {
+        flex: 0 0 50%; /* Two cards per row on medium screens */
+        max-width: 50%; /* Limit width for two cards per row */
+    }
+}
+
+@media (min-width: 993px) {
+    .col-lg-4 {
+        flex: 0 0 33.33%; /* Three cards per row on larger screens */
+        max-width: 33.33%; /* Limit width for three cards per row */
+    }
+}
